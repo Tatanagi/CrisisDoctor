@@ -15,11 +15,11 @@ public class PlayerShoot : MonoBehaviour
     [SerializeField]
     private float _timeBetweenShots;
     [SerializeField]
-    private int _maxAmmo = 10; // Maximum ammo count
+    private int _maxAmmo = 10; 
     private int _currentAmmo;
     
     [SerializeField]
-    private TMP_Text _ammoText; // Reference to a UI TextMeshPro element to display ammo
+    private TMP_Text _ammoText; 
     
     private bool _fireSingle;
     private bool _fireContinuously;
