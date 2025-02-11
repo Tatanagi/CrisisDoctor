@@ -6,6 +6,7 @@ public class EnemyMovement : MonoBehaviour
 {
     private Transform player;
     public float moveSpeed = 3f;
+    public float stopDistance = 1.5f; // Distance at which the enemy stops moving
 
     void Start()
     {
@@ -26,8 +27,13 @@ public class EnemyMovement : MonoBehaviour
     {
         if (player != null)
         {
-            // Move towards the player's position
-            transform.position = Vector2.MoveTowards(transform.position, player.position, moveSpeed * Time.deltaTime);
+            float distance = Vector2.Distance(transform.position, player.position);
+
+            // Move towards the player only if beyond the stop distance
+            if (distance > stopDistance)
+            {
+                transform.position = Vector2.MoveTowards(transform.position, player.position, moveSpeed * Time.deltaTime);
+            }
         }
     }
 }

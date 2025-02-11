@@ -7,7 +7,8 @@ public class PlayerMovement : MonoBehaviour
     public float moveSpeed = 5f;
     public Rigidbody2D rb;
     public Camera cam;
-    public GameObject crosshair; // Reference to the crosshair object
+    public GameObject crosshair;
+    private Transform enemy; // Reference to the enemy
 
     Vector2 movement;
     Vector2 mousePos;
@@ -15,6 +16,13 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         Cursor.visible = false; // Hide the default cursor
+
+        // Find the enemy object
+        EnemyMovement enemyMovement = FindObjectOfType<EnemyMovement>();
+        if (enemyMovement != null)
+        {
+            enemy = enemyMovement.transform;
+        }
     }
 
     void Update()
@@ -30,6 +38,17 @@ public class PlayerMovement : MonoBehaviour
         if (crosshair != null)
         {
             crosshair.transform.position = mousePos;
+        }
+
+        // Run away from enemy if too close
+        if (enemy != null)
+        {
+            float distance = Vector2.Distance(transform.position, enemy.position);
+            if (distance < 2f) // If enemy is too close, move in the opposite direction
+            {
+                Vector2 directionAway = (transform.position - enemy.position).normalized;
+                movement += directionAway; // Add escape movement
+            }
         }
     }
 
