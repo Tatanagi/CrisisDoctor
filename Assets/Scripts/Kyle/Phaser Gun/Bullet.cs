@@ -4,11 +4,22 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    public GameObject hitEffect;
-    void OnCollisionEnter2D(Collision2D collision)
+    private Rigidbody2D rb;
+
+
+    void Start()
     {
-        GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
-        Destroy(effect, 5f);
-        Destroy(gameObject);
+        rb = GetComponent<Rigidbody2D>();
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        // Check if the collided object is an enemy
+        if (collision.CompareTag("Enemy"))
+        {
+            // Destroy the enemy and the bullet
+            Destroy(collision.gameObject);
+            Destroy(gameObject);
+        }
     }
 }
