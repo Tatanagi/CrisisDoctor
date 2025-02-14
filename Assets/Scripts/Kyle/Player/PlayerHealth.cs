@@ -17,10 +17,6 @@ public class PlayerHealth : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.V))
-        {
-            TakeDamage(20);
-        }
     }
 
     // Changed to public so DamageDealer can access it
@@ -28,16 +24,6 @@ public class PlayerHealth : MonoBehaviour
     {
         currentHealth -= damage;
         healthBar.SetHealth(currentHealth);
-
-        if (currentHealth <= 0)
-        {
-            Die();
-        }
     }
 
-    void Die()
-    {
-        Debug.Log("Player has died!");
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); // Reload scene on death
-    }
 }
