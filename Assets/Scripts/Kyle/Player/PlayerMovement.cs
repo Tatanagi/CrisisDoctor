@@ -8,16 +8,15 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody2D rb;
     public Camera cam;
     public GameObject crosshair;
-    private Transform enemy; // Reference to the enemy
+    private Transform enemy;
 
     Vector2 movement;
     Vector2 mousePos;
 
     void Start()
     {
-        Cursor.visible = false; // Hide the default cursor
+        Cursor.visible = false;
 
-        // Find the enemy object
         EnemyMovement enemyMovement = FindObjectOfType<EnemyMovement>();
         if (enemyMovement != null)
         {
@@ -28,8 +27,7 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         // Get movement input
-        movement.x = Input.GetAxisRaw("Horizontal");
-        movement.y = Input.GetAxisRaw("Vertical");
+        movement = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
 
         // Convert mouse position to world space
         mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
@@ -44,17 +42,19 @@ public class PlayerMovement : MonoBehaviour
         if (enemy != null)
         {
             float distance = Vector2.Distance(transform.position, enemy.position);
-            if (distance < 2f) // If enemy is too close, move in the opposite direction
+            if (distance < 2f)
             {
                 Vector2 directionAway = (transform.position - enemy.position).normalized;
-                movement += directionAway; // Add escape movement
+
+                // Blend escape direction with player movement
+                movement = (movement + directionAway).normalized;
             }
         }
     }
 
     void FixedUpdate()
     {
-        // Move player
+        // Apply movement with fixed speed
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
 
         // Rotate player to face the mouse

@@ -1,16 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
-    // Start is called before the first frame update
-
     public int maxHealth = 100;
     public int currentHealth;
     public HealthBar healthBar;
+
     void Start()
     {
         currentHealth = maxHealth;
@@ -25,9 +23,21 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
-    void TakeDamage(int damage)
+    // Changed to public so DamageDealer can access it
+    public void TakeDamage(int damage)
     {
         currentHealth -= damage;
         healthBar.SetHealth(currentHealth);
+
+        if (currentHealth <= 0)
+        {
+            Die();
+        }
+    }
+
+    void Die()
+    {
+        Debug.Log("Player has died!");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); // Reload scene on death
     }
 }

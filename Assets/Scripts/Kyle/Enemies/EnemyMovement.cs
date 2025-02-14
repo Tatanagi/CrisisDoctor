@@ -17,10 +17,6 @@ public class EnemyMovement : MonoBehaviour
         {
             player = playerMovement.transform;
         }
-        else
-        {
-            Debug.LogError("PlayerMovement script not found in the scene!");
-        }
     }
 
     void Update()
