@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 48
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -100,9 +100,9 @@ TextureImporter:
       name: doctorsprite_0
       rect:
         serializedVersion: 2
-        x: 1
+        x: 2
         y: 156
-        width: 34
+        width: 30
         height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -121,10 +121,10 @@ TextureImporter:
       name: doctorsprite_1
       rect:
         serializedVersion: 2
-        x: 2
-        y: 104
-        width: 31
-        height: 51
+        x: 36
+        y: 156
+        width: 30
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -142,9 +142,9 @@ TextureImporter:
       name: doctorsprite_2
       rect:
         serializedVersion: 2
-        x: 37
-        y: 156
-        width: 29
+        x: 70
+        y: 104
+        width: 30
         height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -163,10 +163,10 @@ TextureImporter:
       name: doctorsprite_3
       rect:
         serializedVersion: 2
-        x: 70
+        x: 104
         y: 156
         width: 30
-        height: 52
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,10 +184,10 @@ TextureImporter:
       name: doctorsprite_4
       rect:
         serializedVersion: 2
-        x: 103
-        y: 156
-        width: 31
-        height: 52
+        x: 38
+        y: 104
+        width: 28
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -205,10 +205,10 @@ TextureImporter:
       name: doctorsprite_5
       rect:
         serializedVersion: 2
-        x: 37
+        x: 106
         y: 104
-        width: 30
-        height: 51
+        width: 28
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -226,10 +226,10 @@ TextureImporter:
       name: doctorsprite_6
       rect:
         serializedVersion: 2
-        x: 71
-        y: 104
-        width: 30
-        height: 51
+        x: 36
+        y: 52
+        width: 28
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -248,9 +248,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 104
-        y: 104
-        width: 31
-        height: 51
+        y: 52
+        width: 28
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -268,8 +268,8 @@ TextureImporter:
       name: doctorsprite_8
       rect:
         serializedVersion: 2
-        x: 2
-        y: 53
+        x: 36
+        y: 0
         width: 30
         height: 50
       alignment: 0
@@ -289,10 +289,10 @@ TextureImporter:
       name: doctorsprite_9
       rect:
         serializedVersion: 2
-        x: 35
-        y: 51
-        width: 32
-        height: 52
+        x: 104
+        y: 0
+        width: 30
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,10 +310,10 @@ TextureImporter:
       name: doctorsprite_10
       rect:
         serializedVersion: 2
-        x: 69
+        x: 2
         y: 52
-        width: 32
-        height: 51
+        width: 30
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -321,7 +321,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 527c9893d70a47c429fa9c5235c85e06
+      spriteID: cdc3d6f9df129bb48b89c36d25e552c0
       internalID: -811063883
       vertices: []
       indices: 
@@ -331,9 +331,9 @@ TextureImporter:
       name: doctorsprite_11
       rect:
         serializedVersion: 2
-        x: 104
-        y: 51
-        width: 28
+        x: 70
+        y: 0
+        width: 30
         height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -342,7 +342,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 72fff88dd731a864eb05070c93930e92
+      spriteID: 5ccf33e2c8f203e49ac57367f6c74b68
       internalID: 1057868809
       vertices: []
       indices: 
@@ -352,9 +352,9 @@ TextureImporter:
       name: doctorsprite_12
       rect:
         serializedVersion: 2
-        x: 1
+        x: 70
         y: 0
-        width: 31
+        width: 30
         height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -363,71 +363,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7cb54948852e83546a3705d885399b16
+      spriteID: e24e671ba9757734b996dcfad0bd16fd
       internalID: 877178901
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: doctorsprite_13
-      rect:
-        serializedVersion: 2
-        x: 35
-        y: 0
-        width: 32
-        height: 51
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fb0c22f07bc327c45bd755dd368697bd
-      internalID: -33496338
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: doctorsprite_14
-      rect:
-        serializedVersion: 2
-        x: 70
-        y: 0
-        width: 30
-        height: 51
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 294ce4b5d7bbfee448a0c59edce951ba
-      internalID: 1849731118
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: doctorsprite_15
-      rect:
-        serializedVersion: 2
-        x: 104
-        y: 0
-        width: 31
-        height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 326d2cf2c84e3e3489263dfc5a125c4e
-      internalID: -727134386
       vertices: []
       indices: 
       edges: []
@@ -448,9 +385,6 @@ TextureImporter:
       doctorsprite_10: -811063883
       doctorsprite_11: 1057868809
       doctorsprite_12: 877178901
-      doctorsprite_13: -33496338
-      doctorsprite_14: 1849731118
-      doctorsprite_15: -727134386
       doctorsprite_2: 1006818179
       doctorsprite_3: -1082578604
       doctorsprite_4: -1859268606
