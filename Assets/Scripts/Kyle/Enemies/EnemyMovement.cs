@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
@@ -10,7 +8,6 @@ public class EnemyMovement : MonoBehaviour
 
     void Start()
     {
-        // Find the player object with the PlayerMovement script
         PlayerMovement playerMovement = FindObjectOfType<PlayerMovement>();
 
         if (playerMovement != null)

@@ -1,25 +1,24 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    private Rigidbody2D rb;
-
-
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
+        Destroy(gameObject, 3f); // Destroy bullet after 3 seconds if it doesn't hit anything
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        // Check if the collided object is an enemy
         if (collision.CompareTag("Enemy"))
         {
-            // Destroy the enemy and the bullet
-            Destroy(collision.gameObject);
-            Destroy(gameObject);
+            LootBag lootBag = collision.GetComponent<LootBag>();
+            if (lootBag != null)
+            {
+                lootBag.InstantiateLoot(collision.transform.position);
+            }
+
+            Destroy(collision.gameObject); // Properly destroy the enemy
+            Destroy(gameObject); // Destroy the bullet after hitting the enemy
         }
     }
 }
