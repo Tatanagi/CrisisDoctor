@@ -41,4 +41,6 @@ public class LootBag : MonoBehaviour
             lootGameObject.GetComponent<Rigidbody2D>().AddForce(dropDirection * dropForce, ForceMode2D.Impulse);
         }
     }
+
+
 }
