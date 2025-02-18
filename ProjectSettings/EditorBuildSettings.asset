@@ -6,15 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Kyle_Scene.unity
+    path: Assets/Scenes/Work Spaces/Kyle_Scene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/Master.unity
+    path: Assets/Scenes/Main Game/Master.unity
     guid: ac0fdf7edbefb664aa5289b45e77018f
   - enabled: 1
-    path: Assets/Scenes/GameOver.unity
+    path: Assets/Scenes/Main Game/GameOver.unity
     guid: 111df074f4e8b83468b010e76d6e9be4
   - enabled: 1
-    path: Assets/Scenes/TitleScreen.unity
+    path: Assets/Scenes/Main Game/TitleScreen.unity
     guid: bcfcd42b52cf5284ca6b35e628c43c58
   m_configObjects: {}
