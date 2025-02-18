@@ -15,4 +15,4 @@ MonoBehaviour:
   lootSprite: {fileID: 21300000, guid: c60327a5c1ba5ca4c93dedbad2e63505, type: 3}
   lootName: Mana Potion
   dropChance: 50
-  value: 0
+  value: 50

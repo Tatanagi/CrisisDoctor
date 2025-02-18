@@ -15,15 +15,15 @@ public class PlayerHealth : MonoBehaviour
         healthBar.SetMaxHealth(maxHealth);
     }
 
-    void Update()
-    {
-    }
-
-    // Changed to public so DamageDealer can access it
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
         healthBar.SetHealth(currentHealth);
-    }
 
+        if (currentHealth <= 0)
+        {
+            currentHealth = 0; // Ensure health doesn't go negative
+            SceneManager.LoadScene("GameOver"); // Load the next scene
+        }
+    }
 }
