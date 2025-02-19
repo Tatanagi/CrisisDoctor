@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3142839412807876838}
   - component: {fileID: 8287120515944786625}
   - component: {fileID: 340359042499630911}
+  - component: {fileID: 178408280502762567}
   m_Layer: 0
   m_Name: Bean (1)
   m_TagString: Enemy
@@ -169,3 +170,15 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 71a058b8c4047d740856d3b783cb0ab3, type: 2}
   manaLootList:
   - {fileID: 11400000, guid: 30bc71c7c24d18b409e263a312d5a2a0, type: 2}
+--- !u!114 &178408280502762567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1635927968089196881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 548b244097bee5c489f8ded9ed4040a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
