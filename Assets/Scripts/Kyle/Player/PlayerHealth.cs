@@ -26,4 +26,13 @@ public class PlayerHealth : MonoBehaviour
             SceneManager.LoadScene("GameOver"); // Load the next scene
         }
     }
+    public void Heal(int amount)
+    {
+        currentHealth += amount;
+        if (currentHealth > maxHealth)
+        {
+            currentHealth = maxHealth; // Prevent overhealing
+        }
+        healthBar.SetHealth(currentHealth);
+    }
 }
