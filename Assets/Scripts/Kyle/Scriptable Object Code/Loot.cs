@@ -16,5 +16,4 @@ public class Loot : ScriptableObject
     public int value;
     public LootType lootType; // Categorization of loot
 
-    // Remove the constructor because ScriptableObjects don't support them
 }

@@ -77,6 +77,10 @@ public class PlayerShoot : MonoBehaviour
     {
         _currentAmmo = Mathf.Min(_currentAmmo + ammoAmount, _maxAmmo);
         UpdateAmmoUI();
+
+        // Prevent auto-firing after reloading
+        _fireSingle = false;
+        _fireContinuously = false;
     }
 
     private void UpdateAmmoUI()

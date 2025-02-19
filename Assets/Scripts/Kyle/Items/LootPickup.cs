@@ -18,17 +18,22 @@ public class LootPickup : MonoBehaviour
     private void ProcessLoot(Loot loot, GameObject player)
     {
         PlayerHealth playerHealth = player.GetComponent<PlayerHealth>();
+        PlayerShoot playerShoot = player.GetComponent<PlayerShoot>(); // Corrected reference
 
         switch (loot.lootType)
         {
             case LootType.Ammo:
-                Debug.Log("Picked up Ammo: " + loot.lootName);
+                if (playerShoot != null)
+                {
+                    playerShoot.Reload(loot.value); // Using Reload instead of a missing IncreaseAmmo method
+                    Debug.Log($"Picked up Ammo: {loot.lootName}, increased by {loot.value}");
+                }
                 break;
             case LootType.Health:
                 if (playerHealth != null)
                 {
-                    playerHealth.Heal(loot.value); // Uses the value from the Loot ScriptableObject
-                    Debug.Log($"Picked up Health: {loot.lootName} and healed for {loot.value}");
+                    playerHealth.Heal(loot.value);
+                    Debug.Log($"Picked up Health: {loot.lootName}, healed for {loot.value}");
                 }
                 break;
             case LootType.Mana:
