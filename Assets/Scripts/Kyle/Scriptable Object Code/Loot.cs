@@ -1,19 +1,20 @@
-using JetBrains.Annotations;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Loot", menuName = "ScriptableObject/Loot", order = 1)]
+public enum LootType
+{
+    Ammo,
+    Health,
+    Mana,
+}
+
+[CreateAssetMenu(fileName = "NewLoot", menuName = "ScriptableObject/Loot", order = 1)]
 public class Loot : ScriptableObject
 {
     public Sprite lootSprite;
     public string lootName;
     public int dropChance;
     public int value;
+    public LootType lootType; // Categorization of loot
 
-    public Loot(Sprite lootSprite, string lootName, int dropChance)
-    {
-        this.lootSprite = lootSprite;
-        this.dropChance = dropChance;
-    }
+    // Remove the constructor because ScriptableObjects don't support them
 }
