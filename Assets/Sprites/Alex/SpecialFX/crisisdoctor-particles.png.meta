@@ -1,0 +1,401 @@
+fileFormatVersion: 2
+guid: 23d16ea2cddaa8f44ba36966be88dadc
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 50
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: crisisdoctor-particles_22
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 204
+        width: 66
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81a8ca3684c48ce48ad09111136b8f7d
+      internalID: -1627999223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crisisdoctor-particles_23
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 200
+        width: 75
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db36d1e0266bd1146b89429686fb9198
+      internalID: 998787741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crisisdoctor-particles_24
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 201
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67dacc310318d4f4b80e912805178bf0
+      internalID: -1816070135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crisisdoctor-particles_25
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 202
+        width: 70
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87c86a5b20e7c6f4f8ca25b22f1b80a7
+      internalID: 1259434827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crisisdoctor-particles_28
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 202
+        width: 67
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49cdd213e689d8741a79d3be863fea23
+      internalID: 1109720207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crisisdoctor-particles_31
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 200
+        width: 70
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42fbb4ebeaba15648846f8e27aa36628
+      internalID: -2066051883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crisisdoctor-particles_32
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 200
+        width: 70
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbdb38f902f45e9439f03d8fea72ff3a
+      internalID: -1534199475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crisisdoctor-particles_33
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 200
+        width: 70
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed25e1765dbbfa34cabd9196cd42e3c4
+      internalID: -816734013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crisisdoctor-particles_34
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 201
+        width: 70
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70ae36d85c0ba774da8adc23340170d2
+      internalID: 1145445612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crisisdoctor-particles_35
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 203
+        width: 67
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 649260f54855d684dacece0653aa7a30
+      internalID: -764489258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      crisisdoctor-particles_0: 1604532450
+      crisisdoctor-particles_1: 1142882459
+      crisisdoctor-particles_10: 776552143
+      crisisdoctor-particles_11: -1359819474
+      crisisdoctor-particles_12: 1038612103
+      crisisdoctor-particles_13: 1981925594
+      crisisdoctor-particles_14: -1323995946
+      crisisdoctor-particles_15: -7587287
+      crisisdoctor-particles_16: 1764395000
+      crisisdoctor-particles_17: -122188255
+      crisisdoctor-particles_18: 1864692898
+      crisisdoctor-particles_19: 1731626011
+      crisisdoctor-particles_2: 922955210
+      crisisdoctor-particles_20: -122934178
+      crisisdoctor-particles_21: 1650820559
+      crisisdoctor-particles_22: -1627999223
+      crisisdoctor-particles_23: 998787741
+      crisisdoctor-particles_24: -1816070135
+      crisisdoctor-particles_25: 1259434827
+      crisisdoctor-particles_26: 161787090
+      crisisdoctor-particles_27: 403522667
+      crisisdoctor-particles_28: 1109720207
+      crisisdoctor-particles_29: -858936506
+      crisisdoctor-particles_3: 1109795857
+      crisisdoctor-particles_30: -1630448828
+      crisisdoctor-particles_31: -2066051883
+      crisisdoctor-particles_32: -1534199475
+      crisisdoctor-particles_33: -816734013
+      crisisdoctor-particles_34: 1145445612
+      crisisdoctor-particles_35: -764489258
+      crisisdoctor-particles_36: 1667460330
+      crisisdoctor-particles_37: -900668703
+      crisisdoctor-particles_38: -901521544
+      crisisdoctor-particles_39: -1992324351
+      crisisdoctor-particles_4: -20501326
+      crisisdoctor-particles_40: 5048598
+      crisisdoctor-particles_41: -1685065805
+      crisisdoctor-particles_42: -1800581195
+      crisisdoctor-particles_43: 63647706
+      crisisdoctor-particles_44: -545873055
+      crisisdoctor-particles_45: 1935728434
+      crisisdoctor-particles_46: -229423980
+      crisisdoctor-particles_47: -1097949069
+      crisisdoctor-particles_48: -1878564029
+      crisisdoctor-particles_49: -1021131601
+      crisisdoctor-particles_5: -444312848
+      crisisdoctor-particles_50: 904295043
+      crisisdoctor-particles_51: 2129589133
+      crisisdoctor-particles_52: -208376608
+      crisisdoctor-particles_53: 1549437727
+      crisisdoctor-particles_54: -1294632413
+      crisisdoctor-particles_55: -201389181
+      crisisdoctor-particles_56: 1026521971
+      crisisdoctor-particles_57: 160582550
+      crisisdoctor-particles_58: -347663181
+      crisisdoctor-particles_59: -2040861691
+      crisisdoctor-particles_6: -1276440594
+      crisisdoctor-particles_60: 783209569
+      crisisdoctor-particles_61: 1480401614
+      crisisdoctor-particles_62: -762755854
+      crisisdoctor-particles_63: 378444664
+      crisisdoctor-particles_64: -1552187576
+      crisisdoctor-particles_65: -1138970928
+      crisisdoctor-particles_66: -199399296
+      crisisdoctor-particles_67: 1148205805
+      crisisdoctor-particles_68: 478021597
+      crisisdoctor-particles_69: 1215636696
+      crisisdoctor-particles_7: 1870351178
+      crisisdoctor-particles_70: -1339203880
+      crisisdoctor-particles_71: 1719499612
+      crisisdoctor-particles_72: -1719829761
+      crisisdoctor-particles_73: -1582637740
+      crisisdoctor-particles_74: -1804534663
+      crisisdoctor-particles_75: 375645247
+      crisisdoctor-particles_76: 1856983868
+      crisisdoctor-particles_8: -982295647
+      crisisdoctor-particles_9: -973053707
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
