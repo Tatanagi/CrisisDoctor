@@ -25,6 +25,12 @@ public class Bullet : MonoBehaviour
                 player.GainExp(expAmount);
             }
 
+            // Ensure ScoreManagement instance exists before adding points
+            if (ScoreManagement.instance != null)
+            {
+                ScoreManagement.instance.AddKill(1); // Adds 1 point per enemy
+            }
+
             Destroy(collision.gameObject);
             Destroy(gameObject);
         }
