@@ -15,5 +15,5 @@ MonoBehaviour:
   lootSprite: {fileID: 21300000, guid: 6cb212869096fe24a9542a475ec2dc62, type: 3}
   lootName: 'Ammo '
   dropChance: 50
-  value: 10
+  value: 100
   lootType: 0

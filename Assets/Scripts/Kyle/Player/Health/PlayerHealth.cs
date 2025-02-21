@@ -22,6 +22,7 @@ public class PlayerHealth : MonoBehaviour
         {
             currentHealth = 0; // Ensure health doesn't go negative
             SceneManager.LoadScene("GameOver"); // Load the next scene
+            ScoreManagement.instance.SaveScoreAndLoadGameOver();
         }
     }
 

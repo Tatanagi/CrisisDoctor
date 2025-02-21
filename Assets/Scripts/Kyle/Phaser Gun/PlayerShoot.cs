@@ -64,9 +64,10 @@ public class PlayerShoot : MonoBehaviour
 
     public void Reload(int ammoAmount)
     {
-        _currentAmmo = Mathf.Min(_currentAmmo + ammoAmount, _maxAmmo);
-        UpdateAmmoUI();
+        _currentAmmo = Mathf.Clamp(_currentAmmo + ammoAmount, 0, _maxAmmo);
+        UpdateAmmoUI();  // Ensures the ammo count is updated on screen
     }
+
 
     private void UpdateAmmoUI()
     {

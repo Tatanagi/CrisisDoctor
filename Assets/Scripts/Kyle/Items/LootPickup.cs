@@ -18,14 +18,14 @@ public class LootPickup : MonoBehaviour
     private void ProcessLoot(Loot loot, GameObject player)
     {
         PlayerHealth playerHealth = player.GetComponent<PlayerHealth>();
-        PlayerShoot playerShoot = player.GetComponent<PlayerShoot>(); // Corrected reference
+        PlayerShoot playerShoot = player.GetComponent<PlayerShoot>();
 
         switch (loot.lootType)
         {
             case LootType.Ammo:
                 if (playerShoot != null)
                 {
-                    playerShoot.Reload(loot.value); // Using Reload instead of a missing IncreaseAmmo method
+                    playerShoot.Reload(loot.value);  // Increase ammo
                     Debug.Log($"Picked up Ammo: {loot.lootName}, increased by {loot.value}");
                 }
                 break;
@@ -37,10 +37,10 @@ public class LootPickup : MonoBehaviour
                 }
                 break;
             case LootType.Mana:
-                Debug.Log("Picked up Mana: " + loot.lootName);
+                Debug.Log($"Picked up Mana: {loot.lootName}");
                 break;
             default:
-                Debug.Log("Picked up: " + loot.lootName);
+                Debug.Log($"Picked up: {loot.lootName}");
                 break;
         }
     }
