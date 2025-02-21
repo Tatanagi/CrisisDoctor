@@ -5,7 +5,7 @@ using UnityEngine;
 public class DamageDealer : MonoBehaviour
 {
     public int takeDamage = 5;
-
+   
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
