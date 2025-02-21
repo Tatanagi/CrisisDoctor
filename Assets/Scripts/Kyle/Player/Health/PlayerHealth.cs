@@ -1,7 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -26,6 +24,7 @@ public class PlayerHealth : MonoBehaviour
             SceneManager.LoadScene("GameOver"); // Load the next scene
         }
     }
+
     public void Heal(int amount)
     {
         currentHealth += amount;
@@ -33,6 +32,14 @@ public class PlayerHealth : MonoBehaviour
         {
             currentHealth = maxHealth; // Prevent overhealing
         }
+        healthBar.SetHealth(currentHealth);
+    }
+
+    public void IncreaseMaxHealth(int amount)
+    {
+        maxHealth += amount;
+        currentHealth = maxHealth;
+        healthBar.SetMaxHealth(maxHealth);
         healthBar.SetHealth(currentHealth);
     }
 }

@@ -3,9 +3,10 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     int expAmount = 100;
+
     void Start()
     {
-        Destroy(gameObject, 3f); // Destroy bullet after 3 seconds if it doesn't hit anything
+        Destroy(gameObject, 3f);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -18,8 +19,14 @@ public class Bullet : MonoBehaviour
                 lootBag.InstantiateLoot(collision.transform.position);
             }
 
-            Destroy(collision.gameObject); // Properly destroy the enemy
-            Destroy(gameObject); // Destroy the bullet after hitting the enemy
+            PlayerLevel player = FindObjectOfType<PlayerLevel>();
+            if (player != null)
+            {
+                player.GainExp(expAmount);
+            }
+
+            Destroy(collision.gameObject);
+            Destroy(gameObject);
         }
     }
 }
