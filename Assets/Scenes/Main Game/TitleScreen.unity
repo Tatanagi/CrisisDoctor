@@ -645,13 +645,13 @@ Transform:
   m_GameObject: {fileID: 1390248893}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 13.190796, y: -28.979797, z: 0.49565935}
+  m_LocalPosition: {x: -1.7472038, y: -25.318897, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1426172128}
   - {fileID: 499643241}
-  m_Father: {fileID: 556115361}
+  m_Father: {fileID: 2071244561}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1426172127
 GameObject:
@@ -924,7 +924,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Title: {fileID: 1466116021}
-  Story: {fileID: 1390248893}
+  Story: {fileID: 2071244560}
   Settings: {fileID: 1957948749}
 --- !u!4 &1671655559
 Transform:
@@ -1231,12 +1231,12 @@ GameObject:
   - component: {fileID: 2071244563}
   - component: {fileID: 2071244562}
   m_Layer: 0
-  m_Name: Image
+  m_Name: Story
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2071244561
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1248,13 +1248,14 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0.49565935}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1390248894}
   m_Father: {fileID: 556115361}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 17.3694, y: -3.6609}
-  m_SizeDelta: {x: 1945.0137, y: 1087.3}
+  m_AnchoredPosition: {x: 14.938, y: -3.6609}
+  m_SizeDelta: {x: 1949.9, y: 1087.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &2071244562
 SpriteRenderer:
@@ -1396,7 +1397,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6101006345547516778, guid: f0da29f2da945ed47bb9e7e6b5d252e6, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6259340641822822697, guid: f0da29f2da945ed47bb9e7e6b5d252e6, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -1549,9 +1550,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 9221591979659752962, guid: f0da29f2da945ed47bb9e7e6b5d252e6, type: 3}
       insertIndex: 0
       addedObject: {fileID: 2071244561}
-    - targetCorrespondingSourceObject: {fileID: 9221591979659752962, guid: f0da29f2da945ed47bb9e7e6b5d252e6, type: 3}
-      insertIndex: 1
-      addedObject: {fileID: 1390248894}
     - targetCorrespondingSourceObject: {fileID: 1365552639228239064, guid: f0da29f2da945ed47bb9e7e6b5d252e6, type: 3}
       insertIndex: -1
       addedObject: {fileID: 585473937}
