@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
 using TMPro;
 
 public class PlayerShoot : MonoBehaviour
@@ -15,14 +14,12 @@ public class PlayerShoot : MonoBehaviour
     [SerializeField]
     private float _timeBetweenShots;
     [SerializeField]
-    private int _maxAmmo = 10; 
+    private int _maxAmmo = 10;
     private int _currentAmmo;
-    
+
     [SerializeField]
-    private TMP_Text _ammoText; 
-    
-    private bool _fireSingle;
-    private bool _fireContinuously;
+    private TMP_Text _ammoText;
+
     private float _lastFireTime;
 
     void Start()
@@ -33,7 +30,10 @@ public class PlayerShoot : MonoBehaviour
 
     void Update()
     {
-        if ((_fireContinuously || _fireSingle) && _currentAmmo > 0)
+        bool fireSingle = Input.GetMouseButtonDown(0);  // Detects single click
+        bool fireContinuously = Input.GetMouseButton(0); // Detects holding down
+
+        if ((fireSingle || fireContinuously) && _currentAmmo > 0)
         {
             float timeSinceLastFire = Time.time - _lastFireTime;
 
@@ -41,7 +41,6 @@ public class PlayerShoot : MonoBehaviour
             {
                 FireBullet();
                 _lastFireTime = Time.time;
-                _fireSingle = false;
             }
         }
     }
@@ -63,24 +62,10 @@ public class PlayerShoot : MonoBehaviour
         }
     }
 
-    private void OnFire(InputValue inputValue)
-    {
-        _fireContinuously = inputValue.isPressed;
-
-        if (inputValue.isPressed)
-        {
-            _fireSingle = true;
-        }
-    }
-
     public void Reload(int ammoAmount)
     {
         _currentAmmo = Mathf.Min(_currentAmmo + ammoAmount, _maxAmmo);
         UpdateAmmoUI();
-
-        // Prevent auto-firing after reloading
-        _fireSingle = false;
-        _fireContinuously = false;
     }
 
     private void UpdateAmmoUI()

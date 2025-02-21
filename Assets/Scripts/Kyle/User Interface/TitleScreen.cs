@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class TitleScreen : MonoBehaviour
 {
+    public GameObject Title, Story;
     public void LoadGame()
     {
         SceneManager.LoadScene("Master");
@@ -11,5 +12,11 @@ public class TitleScreen : MonoBehaviour
     public void QuitApplication()
     {
         Application.Quit();
+    }
+
+    public void StoryButton()
+    {
+        Title.SetActive(false);
+        Story.SetActive(true);
     }
 }
