@@ -20,12 +20,19 @@ public class PlayerShoot : MonoBehaviour
     [SerializeField]
     private TMP_Text _ammoText;
 
+    [SerializeField]
+    private AudioClip _fireSound;
+    [SerializeField]
+    private AudioClip _noAmmoSound;
+    private AudioSource _audioSource;
+
     private float _lastFireTime;
 
     void Start()
     {
         _currentAmmo = _maxAmmo;
         UpdateAmmoUI();
+        _audioSource = GetComponent<AudioSource>(); // Get AudioSource component
     }
 
     void Update()
@@ -33,13 +40,21 @@ public class PlayerShoot : MonoBehaviour
         bool fireSingle = Input.GetMouseButtonDown(0);  // Detects single click
         bool fireContinuously = Input.GetMouseButton(0); // Detects holding down
 
-        if ((fireSingle || fireContinuously) && _currentAmmo > 0)
+        if ((fireSingle || fireContinuously))
         {
             float timeSinceLastFire = Time.time - _lastFireTime;
 
             if (timeSinceLastFire >= _timeBetweenShots)
             {
-                FireBullet();
+                if (_currentAmmo > 0)
+                {
+                    FireBullet();
+                }
+                else
+                {
+                    PlayNoAmmoSound(); // Play empty sound if no ammo
+                }
+
                 _lastFireTime = Time.time;
             }
         }
@@ -59,21 +74,37 @@ public class PlayerShoot : MonoBehaviour
 
             _currentAmmo--;
             UpdateAmmoUI();
+            PlayFireSound(); // Play firing sound
         }
     }
 
     public void Reload(int ammoAmount)
     {
         _currentAmmo = Mathf.Clamp(_currentAmmo + ammoAmount, 0, _maxAmmo);
-        UpdateAmmoUI();  // Ensures the ammo count is updated on screen
+        UpdateAmmoUI();
     }
-
 
     private void UpdateAmmoUI()
     {
         if (_ammoText != null)
         {
             _ammoText.text = _currentAmmo + "/" + _maxAmmo;
+        }
+    }
+
+    private void PlayFireSound()
+    {
+        if (_audioSource != null && _fireSound != null)
+        {
+            _audioSource.PlayOneShot(_fireSound);
+        }
+    }
+
+    private void PlayNoAmmoSound()
+    {
+        if (_audioSource != null && _noAmmoSound != null)
+        {
+            _audioSource.PlayOneShot(_noAmmoSound);
         }
     }
 }
