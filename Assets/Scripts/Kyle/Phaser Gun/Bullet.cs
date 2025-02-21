@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
+    int expAmount = 100;
     void Start()
     {
         Destroy(gameObject, 3f); // Destroy bullet after 3 seconds if it doesn't hit anything
