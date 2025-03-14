@@ -4,15 +4,21 @@ using UnityEngine;
 
 public class Flamethrower : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    void FixedUpdate()
     {
-        
-    }
+        int layerMask = 1 << 8;
+        layerMask = ~layerMask;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        RaycastHit FThrower;
+        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out FThrower, Mathf.Infinity, layerMask))
+        {
+            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * FThrower.distance, Color.red);
+            Debug.Log("Toasted");
+        }
+        else
+        {
+            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 1000, Color.white);
+            Debug.Log("No target");
+        }
     }
 }
